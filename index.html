@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Lokal Bombana & Sulawesi Tenggara -->
+    <meta name="description" content="Berkah Aluminium - Jasa pembuatan furniture aluminium premium & konstruksi aluminium di Poleang, Bombana, Sulawesi Tenggara. Menyediakan Kitchen Set, Lemari, Kusen Pintu & Jendela berkualitas tinggi.">
+    <meta name="keywords" content="Berkah Aluminium Bombana, Aluminium Poleang, Furniture Aluminium Sulawesi Tenggara, Kitchen Set Aluminium Bombana, Lemari Pakaian Aluminium, Kusen Aluminium Bombana, Partisi Kaca Bombana">
+    <meta name="author" content="Berkah Aluminium">
+    <meta name="geo.region" content="ID-SG">
+    <meta name="geo.placename" content="Bombana, Poleang, Mattirowalie">
+    <meta name="geo.position" content="-4.7865;121.5038">
+    <meta name="ICBM" content="-4.7865, 121.5038">
+    
+    <title>Berkah Aluminium | Furniture & Konstruksi Aluminium Premium Bombana</title>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Variabel Warna Utama & Tema Elegance */
+        :root {
+            --primary-green: #0d3c1a;       /* Hijau Tua Premium */
+            --accent-green: #1b5e20;        /* Hijau Utama */
+            --light-green: #e8f5e9;         /* Hijau Sangat Muda untuk Background */
+            --silver-alu: #e0e0e0;          /* Silver Aluminium */
+            --silver-dark: #b0bec5;         /* Shadow Silver */
+            --white: #ffffff;
+            --dark-text: #212121;
+            --light-text: #666666;
+            --glass-bg: rgba(255, 255, 255, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f7f5;
+            color: var(--dark-text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Navigasi Modern Glassmorphism */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(13, 60, 26, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 12px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .logo-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+
+        .logo-title span {
+            color: var(--silver-alu);
+            font-weight: 400;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            padding: 6px 0;
+            position: relative;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--white);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--silver-alu);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(135deg, rgba(13, 60, 26, 0.92), rgba(27, 94, 32, 0.80)), url('IMG-20260729-WA0029.jpg.jpeg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            text-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+            color: var(--white);
+        }
+
+        .hero h1 span {
+            color: var(--silver-alu);
+            font-weight: 300;
+            border-bottom: 3px solid var(--white);
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 35px;
+            color: #f1f8e9;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-wa {
+            background-color: #25d366;
+            color: var(--white);
+            border: 2px solid #25d366;
+        }
+
+        .btn-wa:hover {
+            background-color: #1ebd58;
+            border-color: #1ebd58;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-portfolio {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-portfolio:hover {
+            background-color: var(--white);
+            color: var(--primary-green);
+            transform: translateY(-3px);
+        }
+
+        /* Statistik Panel */
+        .stats-panel {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--light-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section Global */
+        section {
+            padding: 100px 8% 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            color: var(--primary-green);
+            font-weight: 700;
+            margin-bottom: 50px;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-green), var(--silver-dark));
+            border-radius: 2px;
+        }
+
+        /* Tentang Kami */
+        .about-box {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            border-left: 6px solid var(--accent-green);
+        }
+
+        .about-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #424242;
+            text-align: justify;
+        }
+
+        .vision-mission {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .vm-card {
+            background: var(--light-green);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(27, 94, 32, 0.1);
+        }
+
+        .vm-card h3 {
+            color: var(--primary-green);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vm-card ul {
+            list-style-position: inside;
+            padding-left: 5px;
+        }
+
+        .vm-card li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Keunggulan Kami */
+        .grid-keunggulan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card-keunggulan {
+            background: var(--white);
+            padding: 35px 25px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+            border: 1px solid #eef2f0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-keunggulan::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--silver-alu);
+            transition: all 0.3s ease;
+        }
+
+        .card-keunggulan:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(13, 60, 26, 0.08);
+            border-color: rgba(27, 94, 32, 0.2);
+        }
+
+        .card-keunggulan:hover::before {
+            background: var(--accent-green);
+        }
+
+        .icon-box {
+            width: 65px;
+            height: 65px;
+            background: var(--light-green);
+            color: var(--accent-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 20px auto;
+            transition: all 0.3s ease;
+        }
+
+        .card-keunggulan:hover .icon-box {
+            background: var(--accent-green);
+            color: var(--white);
+        }
+
+        .card-keunggulan h3 {
+            font-size: 1.25rem;
+            color: var(--primary-green);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .card-keunggulan p {
+            font-size: 0.95rem;
+            color: var(--light-text);
+        }
+
+        /* Produk & Layanan */
+        .grid-produk {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card-produk {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.03);
+            border: 1px solid #eef2f0;
+            transition: all 0.3s ease;
+        }
+
+        .card-produk:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        }
+
+        .produk-img-wrapper {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+            background-color: #eaeaea;
+        }
+
+        .produk-img-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f7f6, #e0e5e2);
+            color: var(--accent-green);
+        }
+
+        .produk-img-placeholder i {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            opacity: 0.7;
+        }
+
+        .card-produk-body {
+            padding: 25px;
+        }
+
+        .card-produk-body h3 {
+            font-size: 1.25rem;
+            color: var(--primary-green);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .card-produk-body p {
+            font-size: 0.95rem;
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+
+        .btn-produk-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--accent-green);
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-produk-wa:hover {
+            color: #25d366;
+            transform: translateX(5px);
+        }
+
+        /* Portofolio Gallery Modern */
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--white);
+            border: 1px solid var(--silver-dark);
+            padding: 8px 22px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--dark-text);
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-green);
+            color: var(--white);
+            border-color: var(--primary-green);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-card {
+            position: relative;
+            border-radius: 14px;
+            overflow: hidden;
+            height: 280px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(13, 60, 26, 0.9), rgba(27, 94, 32, 0.3));
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 25px;
+            transition: opacity 0.3s ease;
+            color: var(--white);
+        }
+
+        .gallery-card:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h4 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            transform: translateY(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-overlay p {
+            font-size: 13px;
+            color: var(--silver-alu);
+            transform: translateY(10px);
+            transition: transform 0.3s ease 0.05s;
+        }
+
+        .gallery-card:hover .gallery-overlay h4,
+        .gallery-card:hover .gallery-overlay p {
+            transform: translateY(0);
+        }
+
+        /* Lightbox untuk Zoom Gambar */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            color: var(--white);
+            font-size: 35px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .lightbox-close:hover {
+            color: var(--silver-alu);
+        }
+
+        /* Lokasi & Kontak Section */
+        .contact-section-wrapper {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            background: var(--white);
+            border-radius: 24px;
+            padding: 45px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+        }
+
+        .info-lokasi h3, .form-kontak-wrapper h3 {
+            color: var(--primary-green);
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+            border-left: 4px solid var(--accent-green);
+            padding-left: 12px;
+        }
+
+        .detail-kontak {
+            margin-bottom: 30px;
+        }
+
+        .item-kontak {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .item-kontak i {
+            font-size: 20px;
+            color: var(--accent-green);
+            margin-top: 4px;
+            width: 25px;
+            text-align: center;
+        }
+
+        .item-kontak p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--silver-alu);
+            margin-bottom: 20px;
+        }
+
+        .map-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn-sm {
+            padding: 10px 20px;
+            font-size: 13px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .btn-outline-green {
+            border: 2px solid var(--accent-green);
+            color: var(--accent-green);
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-outline-green:hover {
+            background-color: var(--accent-green);
+            color: var(--white);
+        }
+
+        /* Form Input */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--dark-text);
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--silver-dark);
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            color: var(--dark-text);
+            background-color: #f9fbf9;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            background-color: var(--white);
+            box-shadow: 0 0 0 3px rgba(27, 94, 32, 0.15);
+        }
+
+        textarea.form-input {
+            resize: vertical;
+        }
+
+        .btn-submit-form {
+            width: 100%;
+            background-color: #25d366;
+            color: var(--white);
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit-form:hover {
+            background-color: #1ebd58;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 60px 8% 30px 8%;
+            border-top: 5px solid var(--silver-alu);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h2 {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .footer-brand p.tag {
+            font-style: italic;
+            color: var(--silver-alu);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .footer-brand p.desc {
+            font-size: 14px;
+            color: #b3cbb9;
+            text-align: justify;
+        }
+
+        .footer-links h4, .footer-contact h4 {
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-links h4::after, .footer-contact h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--silver-alu);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: #b3cbb9;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--white);
+            padding-left: 6px;
+        }
+
+        .footer-contact p {
+            font-size: 14px;
+            color: #b3cbb9;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .footer-contact i {
+            color: var(--white);
+            margin-top: 3px;
+        }
+
+        .copyright-bar {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 25px;
+            text-align: center;
+            font-size: 13px;
+            color: #b3cbb9;
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-wa-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 999;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .floating-wa-btn:hover {
+            transform: scale(1.1) rotate(10deg);
+            background-color: #1ebd58;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Responsive Layout Breaks */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 2.8rem; }
+            .hero p.tagline { font-size: 1.1rem; }
+            .stats-panel { width: 90%; }
+            .vision-mission { grid-template-columns: 1fr; gap: 20px; }
+            .contact-section-wrapper { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 4%; }
+            .menu-toggle { display: block; }
+            nav {
+                position: absolute;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--primary-green);
+                padding: 30px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                transition: all 0.4s ease;
+                border-bottom: 2px solid var(--accent-green);
+            }
+            nav.active { left: 0; }
+            nav ul { flex-direction: column; gap: 20px; text-align: center; }
+            .stats-panel { position: relative; bottom: 0; transform: translateX(0); left: 0; width: 100%; margin-top: 40px; flex-direction: column; gap: 20px; }
+            .hero { height: auto; padding-bottom: 65px; }
+            section { padding: 60px 5% 40px 5%; }
+            .section-title { font-size: 1.9rem; }
+            .about-box { padding: 30px 20px; }
+            .floating-wa-btn { bottom: 20px; right: 20px; width: 52px; height: 52px; font-size: 26px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigasi Navbar -->
+    <header>
+        <a href="#beranda" class="logo-area">
+            <img src="logo berkah alu.png" alt="Logo Berkah Aluminium" class="logo-img">
+            <div class="logo-title">BERKAH <span>ALUMINIUM</span></div>
+        </a>
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="navbar-menu">
+            <ul>
+                <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+                <li><a href="#keunggulan" class="nav-link">Keunggulan</a></li>
+                <li><a href="#layanan" class="nav-link">Produk & Layanan</a></li>
+                <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+                <li><a href="#lokasi-kontak" class="nav-link">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Beranda (Hero Section) -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1>BERKAH <span>ALUMINIUM</span></h1>
+            <p class="tagline">"Kualitas Premium • Kuat • Elegan • Tahan Lama"</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/628231683367" class="btn btn-wa" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Hubungi WhatsApp
+                </a>
+                <a href="#portofolio" class="btn btn-portfolio">
+                    <i class="fa-regular fa-images"></i> Lihat Portofolio
+                </a>
+            </div>
+        </div>
+
+        <!-- Panel Statistik Modern -->
+        <div class="stats-panel">
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Proyek Selesai</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Kepuasan Pelanggan</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Tahun Pengalaman</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang">
+        <h2 class="section-title">Tentang Kami</h2>
+        <div class="about-box">
+            <p class="about-text">
+                <strong>Berkah Aluminium</strong> merupakan usaha yang bergerak dalam pembuatan dan pemasangan berbagai produk aluminium berkualitas untuk kebutuhan rumah tangga, perkantoran, dan bangunan komersial. Kami sangat mengutamakan pemilihan kualitas material, ketelitian tingkat tinggi pada setiap pengerjaan fabrikasi, serta jaminan kepuasan pelanggan secara optimal. Dengan komitmen penuh pada estetika modern dan ketahanan struktural jangka panjang, kami siap menjadi partner terpercaya untuk mewujudkan kebutuhan interior dan eksterior impian Anda di wilayah Bombana dan seluruh Sulawesi Tenggara.
+            </p>
+            
+            <div class="vision-mission">
+                <div class="vm-card">
+                    <h3><i class="fa-regular fa-lightbulb"></i> Visi</h3>
+                    <p>Menjadi workshop fabrikasi furniture dan konstruksi aluminium terdepan di Sulawesi Tenggara yang dikenal luas melalui integritas kerja, mutu material premium, inovasi desain berkelanjutan, dan pelayanan prima kepada pelanggan.</p>
+                </div>
+                <div class="vm-card">
+                    <h3><i class="fa-solid fa-bullseye"></i> Misi</h3>
+                    <ul>
+                        <li>Menggunakan material aluminium dan aksesoris berkualitas standar industri premium.</li>
+                        <li>Menerapkan kontrol ketelitian tinggi dan teknik presisi rapi pada setiap produk buatan.</li>
+                        <li>Memberikan opsi custom desain yang fleksibel demi merealisasikan kebutuhan unik para konsumen.</li>
+                        <li>Membangun komunikasi responsif, jujur, transparan, dan profesional.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Kami Section -->
+    <section id="keunggulan" style="background-color: #ffffff;">
+        <h2 class="section-title">Keunggulan Kami</h2>
+        <div class="grid-keunggulan">
+            <div class="card-keunggulan">
+                <div class="icon-box"><i class="fa-solid fa-layer-group"></i></div>
+                <h3>Material Berkualitas</h3>
+                <p>Menggunakan paduan bahan aluminium mutu tinggi yang tahan rayap, tidak keropos, dan antikarat.</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
+                <h3>Desain Modern</h3>
+                <p>Rancangan desain kekinian yang memadukan keindahan, kebersihan visual, dan efisiensi ruang.</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icon-box"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                <h3>Pengerjaan Rapi</h3>
+                <p>Proses perakitan ditangani cermat oleh tenaga terampil berpengalaman demi hasil akhir presisi.</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icon-box"><i class="fa-solid fa-tags"></i></div>
+                <h3>Harga Kompetitif</h3>
+                <p>Penawaran harga terbaik yang sangat sepadan dengan ketahanan investasi material jangka panjang.</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icon-box"><i class="fa-solid fa-sliders"></i></div>
+                <h3>Bisa Custom Pesanan</h3>
+                <p>Bebas menentukan ukuran, tata letak sekat interior, serta pilihan warna sesuai keinginan ruangan.</p>
+            </div>
+            <div class="card-keunggulan">
+                <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
+                <h3>Pelayanan Profesional</h3>
+                <p>Mulai dari konsultasi awal, pengukuran ke lokasi, hingga instalasi akhir dilayani secara ramah.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk dan Layanan Section -->
+    <section id="layanan">
+        <h2 class="section-title">Produk & Layanan</h2>
+        <div class="grid-produk">
+            <!-- 1. Lemari Pakaian -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-door-closed"></i>
+                        <span>Lemari Pakaian</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Lemari Pakaian Aluminium</h3>
+                    <p>Lemari pakaian eksklusif tahan lembab dengan pintu sliding/swing dan kombinasi kaca cermin premium.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Lemari%20Pakaian" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- 2. Meja Rias -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span>Meja Rias</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Meja Rias Aluminium</h3>
+                    <p>Desain meja rias minimalis modern yang kokoh, dilengkapi laci penyimpanan kosmetik terorganisir.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Meja%20Rias" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- 3. Lemari Pajang -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <span>Lemari Pajang</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Lemari Pajang Aluminium</h3>
+                    <p>Etalase display kaca bening elegan untuk memamerkan koleksi berharga, piagam, atau barang dagangan Anda.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Lemari%20Pajang" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- 4. Lemari TV -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-tv"></i>
+                        <span>Lemari TV</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Lemari TV Aluminium</h3>
+                    <p>Bufet Credenza TV dengan rangka aluminium kuat untuk mendukung beban perangkat elektronik dan dekorasi.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Lemari%20TV" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- 5. Kitchen Set -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <span>Kitchen Set</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Kitchen Set Aluminium</h3>
+                    <p>Solusi lemari dapur idaman anti rayap, mudah dibersihkan dari minyak, tahan air, dan sangat higienis.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Kitchen%20Set" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- 6. Kusen Pintu -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-door-open"></i>
+                        <span>Kusen Pintu</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Kusen Pintu Aluminium</h3>
+                    <p>Konstruksi rangka kusen pintu utama maupun interior bangunan yang presisi, stabil, dan bebas muai susut.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Kusen%20Pintu" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- 7. Kusen Jendela -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-window-maximize"></i>
+                        <span>Kusen Jendela</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Kusen Jendela Aluminium</h3>
+                    <p>Pembuatan jendela casement, sliding, atau awning kedap air dan angin untuk pencahayaan rumah maksimal.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Kusen%20Jendela" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- 8. Partisi Kaca -->
+            <div class="card-produk">
+                <div class="produk-img-wrapper">
+                    <div class="produk-img-placeholder">
+                        <i class="fa-solid fa-border-all"></i>
+                        <span>Partisi Kaca</span>
+                    </div>
+                </div>
+                <div class="card-produk-body">
+                    <h3>Partisi Kaca Aluminium</h3>
+                    <p>Penyekat ruangan berbahan kombinasi kaca transparan/sandblast untuk kantor, toko, maupun ruang tamu.</p>
+                    <a href="https://wa.me/628231683367?text=Halo%20Berkah%20Aluminium,%20saya%20tertarik%20pesan%20Partisi%20Kaca" class="btn-produk-wa" target="_blank">Tanya Produk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio Grid Gallery Section -->
+    <section id="portofolio" style="background-color: #ffffff;">
+        <h2 class="section-title">Portofolio Kami</h2>
+        
+        <div class="portfolio-filter">
+            <button class="filter-btn active" onclick="filterGallery('all')">Semua Proyek</button>
+            <button class="filter-btn" onclick="filterGallery('furniture')">Furniture</button>
+            <button class="filter-btn" onclick="filterGallery('konstruksi')">Konstruksi</button>
+            <button class="filter-btn" onclick="filterGallery('banner')">Info</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Item 1: Baliho Banner -->
+            <div class="gallery-card" data-category="banner" onclick="openLightbox('Baliho.png')">
+                <img src="Baliho.png" alt="Baliho Resmi Berkah Aluminium">
+                <div class="gallery-overlay">
+                    <h4>Baliho Berkah Aluminium</h4>
+                    <p>Profil Banner Papan Nama Usaha</p>
+                </div>
+            </div>
+            <!-- Item 2: IMG-20260729-WA0029 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0029.jpg.jpeg')">
+                <img src="IMG-20260729-WA0029.jpg.jpeg" alt="Kitchen Set Aluminium Hijau Premium">
+                <div class="gallery-overlay">
+                    <h4>Kitchen Set Premium</h4>
+                    <p>Kombinasi Warna Hijau & Putih Mengkilap</p>
+                </div>
+            </div>
+            <!-- Item 3: IMG-20260729-WA0028 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0028.jpg.jpeg')">
+                <img src="IMG-20260729-WA0028.jpg.jpeg" alt="Lemari TV Kaca">
+                <div class="gallery-overlay">
+                    <h4>Bufet & Lemari TV</h4>
+                    <p>Desain Kaca Transparan & Rangka Kokoh</p>
+                </div>
+            </div>
+            <!-- Item 4: IMG-20260729-WA0027 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0027.jpg.jpg')">
+                <img src="IMG-20260729-WA0027.jpg.jpg" alt="Lemari Hias Pajangan">
+                <div class="gallery-overlay">
+                    <h4>Lemari Pajang Display</h4>
+                    <p>Rak Susun Kaca Presisi Tinggi</p>
+                </div>
+            </div>
+            <!-- Item 5: IMG-20260729-WA0026 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0026.jpg.jpg')">
+                <img src="IMG-20260729-WA0026.jpg.jpg" alt="Lemari Pakaian Tiga Pintu">
+                <div class="gallery-overlay">
+                    <h4>Lemari Pakaian Custom</h4>
+                    <p>Konstruksi Solid & Anti Lembab</p>
+                </div>
+            </div>
+            <!-- Item 6: IMG-20260729-WA0023 -->
+            <div class="gallery-card" data-category="konstruksi" onclick="openLightbox('IMG-20260729-WA0023.jpg.jpeg')">
+                <img src="IMG-20260729-WA0023.jpg.jpeg" alt="Kusen Jendela Aluminium Putih">
+                <div class="gallery-overlay">
+                    <h4>Kusen Jendela Rumah</h4>
+                    <p>Warna Putih Coating Elegan Minimalis</p>
+                </div>
+            </div>
+            <!-- Item 7: IMG-20260729-WA0025 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0025.jpg.jpeg')">
+                <img src="IMG-20260729-WA0025.jpg.jpeg" alt="Lemari Pakaian Handle Modern">
+                <div class="gallery-overlay">
+                    <h4>Lemari Pakaian Minimalis</h4>
+                    <p>Pengerjaan Detail Rapi & Elegan</p>
+                </div>
+            </div>
+            <!-- Item 8: IMG-20260729-WA0047 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0047.jpg.jpeg')">
+                <img src="IMG-20260729-WA0047.jpg.jpeg" alt="Rak Aluminium Serbaguna">
+                <div class="gallery-overlay">
+                    <h4>Lemari Hias Ruang Tamu</h4>
+                    <p>Kombinasi Rangka Silver Kuat</p>
+                </div>
+            </div>
+            <!-- Item 9: IMG-20260729-WA0044 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0044.jpg.jpeg')">
+                <img src="IMG-20260729-WA0044.jpg.jpeg" alt="Lemari Kaca Besar Pameran">
+                <div class="gallery-overlay">
+                    <h4>Lemari Kaca Display Jumbo</h4>
+                    <p>Cocok Untuk Toko & Ruang Penyimpanan</p>
+                </div>
+            </div>
+            <!-- Item 10: IMG-20260729-WA0043 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0043.jpg.jpeg')">
+                <img src="IMG-20260729-WA0043.jpg.jpeg" alt="Kitchen Set Bawah Tangga">
+                <div class="gallery-overlay">
+                    <h4>Detail Fabrikasi Internal</h4>
+                    <p>Struktur Aluminium Rapat & Kuat</p>
+                </div>
+            </div>
+            <!-- Item 11: IMG-20260729-WA0042 -->
+            <div class="gallery-card" data-category="furniture" onclick="openLightbox('IMG-20260729-WA0042.jpg.jpeg')">
+                <img src="IMG-20260729-WA0042.jpg.jpeg" alt="Lemari Kaca Kamar Tidur">
+                <div class="gallery-overlay">
+                    <h4>Lemari Sudut Elegan</h4>
+                    <p>Optimalisasi Fungsi Ruangan Berkelas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Zoom Modal Component -->
+    <div class="lightbox" id="image-lightbox-modal">
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <img class="lightbox-content" id="lightbox-target-img" src="" alt="Zoom Portofolio">
+    </div>
+
+    <!-- Lokasi & Kontak Section -->
+    <section id="lokasi-kontak">
+        <h2 class="section-title">Lokasi & Kontak</h2>
+        <div class="contact-section-wrapper">
+            
+            <!-- Kolom Informasi Alamat -->
+            <div class="info-lokasi">
+                <h3><i class="fa-solid fa-map-location-dot"></i> Workshop Kami</h3>
+                <div class="detail-kontak">
+                    <div class="item-kontak">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><strong>Alamat:</strong><br>6J57+38G, Mattirowalie, Kec. Poleang, Kabupaten Bombana, Sulawesi Tenggara 93772</p>
+                    </div>
+                    <div class="item-kontak">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p><strong>WhatsApp:</strong><br>08231683367</p>
+                    </div>
+                    <div class="item-kontak">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p><strong>Facebook:</strong><br>Berkah Aluminium</p>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://maps.google.com/maps?q=Mattirowalie,%20Poleang,%20Bombana&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Kolom Form Kontak Hubungi Langsung Ke WhatsApp -->
+            <div class="form-kontak-wrapper">
+                <h3><i class="fa-regular fa-envelope"></i> Kirim Pesan</h3>
+                <form id="whatsapp-direct-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label class="form-label" for="input-nama">Nama Lengkap</label>
+                        <input type="text" id="input-nama" class="form-input" placeholder="Masukkan nama Anda..." required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="input-telp">Nomor Telepon / WhatsApp</label>
+                        <input type="tel" id="input-telp" class="form-input" placeholder="Contoh: 0823xxxxxxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="input-pesan">Pesan / Rincian Pesanan</label>
+                        <textarea id="input-pesan" class="form-input" rows="5" placeholder="Tuliskan jenis produk aluminium yang ingin Anda buat..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit-form">
+                        <i class="fa-brands fa-whatsapp"></i> Kirim Pesan WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>BERKAH ALUMINIUM</h2>
+                <p class="tag">"Kualitas Premium • Kuat • Elegan • Tahan Lama"</p>
+                <p class="desc">Spesialis pembuatan perabot rumah berbahan dasar aluminium mutu tinggi serta pengerjaan berbagai proyek konstruksi kusen jendela, pintu, dan sekat partisi bangunan di Bombana.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#keunggulan">Keunggulan Kami</a></li>
+                    <li><a href="#layanan">Produk & Layanan</a></li>
+                    <li><a href="#portofolio">Galeri Portofolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Informasi Workshop</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Mattirowalie, Kec. Poleang, Kab. Bombana, Sulawesi Tenggara 93772</p>
+                <p><i class="fa-brands fa-whatsapp"></i> 08231683367</p>
+                <p><i class="fa-brands fa-facebook"></i> Berkah Aluminium</p>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            Copyright © 2026 Berkah Aluminium. Seluruh Hak Cipta Dilindungi.
+        </div>
+    </footer>
+
+    <!-- Tombol WhatsApp Mengambang -->
+    <a href="https://wa.me/628231683367" class="floating-wa-btn" target="_blank" title="Hubungi Berkah Aluminium">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Interaktif -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navbarMenu = document.getElementById('navbar-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navbarMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navbarMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 150)) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function filterGallery(category) {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const galleryCards = document.querySelectorAll('.gallery-card');
+            galleryCards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    if (card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        const lightboxModal = document.getElementById('image-lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-target-img');
+
+        function openLightbox(imageSrc) {
+            lightboxImg.src = imageSrc;
+            lightboxModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                closeLightbox();
+            }
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const nama = document.getElementById('input-nama').value.trim();
+            const telp = document.getElementById('input-telp').value.trim();
+            const pesan = document.getElementById('input-pesan').value.trim();
+            const targetWaNumber = "628231683367";
+            
+            const textMessage = `Halo *Berkah Aluminium*,%0A%0ASaya ingin berkonsultasi mengenai pemesanan produk aluminium dengan rincian berikut:%0A%0A*Nama Pengirim:* ${nama}%0A*Nomor Telepon/WA:* ${telp}%0A*Rincian Kebutuhan:*%0A${pesan}%0A%0AMohon info estimasi harga. Terima kasih.`;
+            const whatsappUrl = `https://wa.me/${targetWaNumber}?text=${textMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
